@@ -4,9 +4,6 @@ import com.example.android_doc_implementation.java_fundamental.*;
 
 // to run klik kanan pilih run with covarage
 public class JavaFundamental {
-    // for OOP 1
-    int x = 5;
-
     public static void main(String[] args) {
         //        learn episode 3 (java fundamental)
         //        System.out.println("Hello");
@@ -187,5 +184,29 @@ public class JavaFundamental {
 
         Phone xiomiObj = new Phone("Xiaomi Redmi Note 11", 4);
 
+        Burung burungDara = new Burung(
+                "Budi si Burung",
+                "coklat",
+                2,
+                true,
+                2
+        );
+        burungDara.makan("nasi");
+        burungDara.terbang();
+        burungDara.terbang(200);
+        System.out.println(burungDara.getSayap());
+        Anjing anjingBullDog = new Anjing("Black si Anjing", "hitam", 4, true);
+
+        Mesin mesin_ferrari = new Mesin("6,5 L V12", 9250);
+        Mobil ferrari = new Mobil("ferrari 812", 2, "merah", mesin_ferrari);
+        System.out.println(ferrari.getNama());
+        System.out.println(ferrari.getMesin().getModel());
+
+        final Mesin mesin_mercedes = new Mesin("mercedes benz", 1200);
+        // Cannot assign a value to final variable 'mesin_mercedes
+        // mesin_mercedes = new Mesin("mercedes benz 2", 1000);
+        // kalo pake final tidak bisa ubah as instance tapi bisa ubah properties dari obj
+        mesin_mercedes.setRpm(1000);
+        System.out.println(mesin_mercedes.getRpm());
     }
 }
