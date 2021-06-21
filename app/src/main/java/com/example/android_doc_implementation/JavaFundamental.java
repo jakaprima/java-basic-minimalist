@@ -17,6 +17,13 @@ public class JavaFundamental {
         //        String nama = "jaka";
         //        Boolean boleanSaya = false;
         //
+        //        int x = 5, y = 6, z = 50;
+        //        System.out.println(x + y + z);
+
+        // casting
+        //        double myDouble = 9.78;
+        //        int myInt = (int) myDouble;
+
         //        int a = 5;
         //        int b = 6;
         //        // int jawaban = a + b;
@@ -24,6 +31,54 @@ public class JavaFundamental {
         //        // int jawaban = a / b;
         //        // int jawaban = a % b;
         //
+
+        // length
+        //        String txt = "Hello";
+        //        System.out.println(txt.length());
+
+        // uppercase
+        //        String txt = "Hello";
+        //        System.out.println(txt.toUpperCase());
+
+        // join two string with + and concat
+        //        String firstName = "John ";
+        //        String lastName = "Doe";
+        //        System.out.println(firstName.concat(lastName));
+
+        // get the index of value
+        //        String txt = "Hello Everybody";
+        //        System.out.println(txt.indexOf("e"));
+
+        // get the highest
+        //        int x = 5;
+        //        int y = 10;
+        //        Math.max(x,y);
+
+        // square root akar pangkat 2
+        //        Math.sqrt(64); // 8.0
+
+        // random
+        //        Math.random();
+
+        // ternary operatator
+        //        int time = 20;
+        //        String result = (time < 18) ? "a": "b";
+
+        // create two dimenstional array
+        //        int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+
+        // try except last
+        //        try {
+        //            int[] myNumbers = {1, 2, 3};
+        //            System.out.println(myNumbers[10]);
+        //        }
+        //        catch (Exception e) {
+        //            System.out.println("Something went wrong.");
+        //        }
+        //        finally {
+        //            System.out.println("after try catch is finished");
+        //        }
+
         //        String nama1 = "jaka";
         //        String nama2 = "prima";
         //        String namaLengkap = nama1 + nama2;
@@ -208,5 +263,17 @@ public class JavaFundamental {
         // kalo pake final tidak bisa ubah as instance tapi bisa ubah properties dari obj
         mesin_mercedes.setRpm(1000);
         System.out.println(mesin_mercedes.getRpm());
+
+        // static keyword
+        // static hanya bisa dipanggil di static declaration
+        TestClass.nama = "jaka";
+        TestClass testClass = new TestClass(12);
+        System.out.println(testClass.getNama());
+        System.out.println(testClass.nama);
+        TestClass.testMethodPublicStatic();
+        // Non-static method 'testMethodPublic()' cannot be referenced from a static context
+        // TestClass.testMethodPublic();
+
+
     }
 }

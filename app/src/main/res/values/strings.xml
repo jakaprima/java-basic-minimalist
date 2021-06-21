@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">android-doc-implementation</string>
+    <string name="app_name">PrimaSaja</string>
+    <string-array name="muridDataStatic">
+        <item>Jaka</item>
+        <item>Prima</item>
+        <item>Maulana</item>
+    </string-array>
 </resources>

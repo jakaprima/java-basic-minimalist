@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 public class OopChallange {
     public static void main(String[] args){
+        // The class below should not be inherited by other classes. Add the correct modifier:
+        //final class MyClass
+
         Pasien pasienObj = new Pasien("Rudi", 27,
                 new Mata("mata kiri", "rabun jauh", "coklat", true),
                 new Mata("mata kanan", "normal", "coklat", true),

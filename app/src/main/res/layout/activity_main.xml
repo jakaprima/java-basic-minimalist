@@ -1,90 +1,287 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- Layout ada beberapa type Constraint, Relative, Linear, Grid, dll: check by type <layout-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextEmail"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Masukan Email"-->
+<!--        android:inputType="textPersonName"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/editTextLastName"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/editTextLastName"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextLastName" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextFirstname"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="64dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Masukan Nama Depan"-->
+<!--        android:inputType="textPersonName"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextLastName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Masukan Nama Belakang"-->
+<!--        android:inputType="textPersonName"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/editTextFirstname"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/editTextFirstname"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextFirstname" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:onClick="onBtnRegisterClick"-->
+<!--        android:text="Daftar"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/editTextEmail"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/editTextEmail"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textFirstName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:text="text First Name"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/button3"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/button3"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/button3"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textColor="@color/purple_200"-->
+<!--        android:textStyle="bold|italic"-->
+<!--        />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textLastName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:text="textLastName"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/textFirstName"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/textFirstName"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textFirstName" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textEmail"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:text="text email"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/textLastName"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/textLastName"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textLastName" />-->
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity"-->
+<!--    android:padding="10dp">-->
+
+<!--    &lt;!&ndash;    android:layout_margin="60dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;    android:layout_marginLeft="30dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;    android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--    &lt;!&ndash;    android:layout_centerVertical="true"&ndash;&gt;-->
+<!--    &lt;!&ndash;    <TextView&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:text="Halo dunia"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_centerInParent="true"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:textSize="20sp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:textStyle="bold|italic"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:textColor="@color/purple_700"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:id="@+id/appNama"&ndash;&gt;-->
+<!--    &lt;!&ndash;        />&ndash;&gt;-->
+
+<!--    &lt;!&ndash;    onclick pindahin ke java&ndash;&gt;-->
+<!--    &lt;!&ndash;    android:onClick="onBtnClick"&ndash;&gt;-->
+<!--    &lt;!&ndash;    daripada menggunakan margin left dan right gunakan padding di relative layout&ndash;&gt;-->
+<!--    &lt;!&ndash;    <EditText&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_below="@id/appNama"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_marginTop="10dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_marginBottom="10dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:id="@+id/editTextTest"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:textColor="@color/teal_700"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:textStyle="italic|bold"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:lines="2"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:inputType=""&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:hint="input your test value"&ndash;&gt;-->
+<!--    &lt;!&ndash;        />&ndash;&gt;-->
+<!--    &lt;!&ndash;    <Button&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:text="Test"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_below="@id/editTextTest"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:background="@color/design_default_color_primary_dark"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:id="@+id/buttonTestClick"&ndash;&gt;-->
+<!--    &lt;!&ndash;        />&ndash;&gt;-->
+<!--    -->
+<!--    -->
+<!--    &lt;!&ndash;    <RelativeLayout&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:id="@+id/checkboxWrapper"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_marginTop="20dp">&ndash;&gt;-->
+<!--    &lt;!&ndash;        <CheckBox&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:text="pilihan 1"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:id="@+id/checkbox1"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:checked="true"&ndash;&gt;-->
+<!--    &lt;!&ndash;            />&ndash;&gt;-->
+<!--    &lt;!&ndash;        <CheckBox&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:text="pilihan 2"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:id="@+id/checkbox2"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:checked="true"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:layout_toRightOf="@id/checkbox1"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:layout_marginLeft="10dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;            />&ndash;&gt;-->
+<!--    &lt;!&ndash;        <CheckBox&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:text="pilihan 3"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:id="@+id/checkbox3"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:layout_toRightOf="@id/checkbox2"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:layout_marginLeft="10dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;            />&ndash;&gt;-->
+<!--    &lt;!&ndash;    </RelativeLayout>&ndash;&gt;-->
+<!--    &lt;!&ndash;    <RadioGroup&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_below="@id/checkboxWrapper"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:orientation="horizontal"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:id="@+id/radioGroupStatusMenikah">&ndash;&gt;-->
+<!--    &lt;!&ndash;        <RadioButton&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:text="Menikah"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:id="@+id/radioButtonMenikah"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:checked="true"/>&ndash;&gt;-->
+<!--    &lt;!&ndash;        <RadioButton&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:text="Belum Menikah"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:id="@+id/radioButtonBelumMenikah" />&ndash;&gt;-->
+<!--    -->
+<!--    &lt;!&ndash;    </RadioGroup>&ndash;&gt;-->
+<!--    &lt;!&ndash;    <ProgressBar&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:id="@+id/progressBar"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_centerInParent="true"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:visibility="gone"/>&ndash;&gt;-->
+<!--    -->
+<!--    &lt;!&ndash;    &lt;!&ndash;        android:progress="20"&ndash;&gt;&ndash;&gt;-->
+<!--    &lt;!&ndash;    <ProgressBar&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:id="@+id/progressBar2"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_centerInParent="true"&ndash;&gt;-->
+<!--    &lt;!&ndash;        style="@style/Widget.AppCompat.ProgressBar.Horizontal"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:max="100"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:visibility="visible"&ndash;&gt;-->
+<!--    &lt;!&ndash;        />&ndash;&gt;-->
+<!--</RelativeLayout>-->
+
+
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity"-->
+<!--    android:orientation="horizontal">-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/teal_700"-->
+<!--        android:text="TEST 1"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_weight="20"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Test 2"-->
+<!--        android:layout_weight="80"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:background="@color/purple_700"/>-->
+<!--</LinearLayout>-->
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
 
+<!--    android:src="@drawable/ic_alarm"-->
+<!--    <ImageView-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:src="@mipmap/logo_primasaja"-->
+<!--        android:id="@+id/myImage"-->
+<!--        android:layout_centerInParent="true"/>-->
+<!--    rubah logo aplikasi ke manifests/AndroidManifest.xml-->
 
-    <EditText
-        android:id="@+id/editTextEmail"
+    <!--    LISTVIEW DAN DROPDOWN (Spinner)-->
+    <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:hint="Masukan Email"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/editTextLastName"
-        app:layout_constraintStart_toStartOf="@+id/editTextLastName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLastName" />
-
-    <EditText
-        android:id="@+id/editTextFirstname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:ems="10"
-        android:hint="Masukan Nama Depan"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextLastName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:hint="Masukan Nama Belakang"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/editTextFirstname"
-        app:layout_constraintStart_toStartOf="@+id/editTextFirstname"
-        app:layout_constraintTop_toBottomOf="@+id/editTextFirstname" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:onClick="onBtnRegisterClick"
-        android:text="Daftar"
-        app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
-        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+        android:id="@+id/listMuridSpinner"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:id="@+id/listKota"
+        android:layout_below="@+id/listMuridSpinner2"/>
 
-    <TextView
-        android:id="@+id/textFirstName"
+<!--    kalo data static bisa taro di res/values/strings.xml-->
+    <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="text First Name"
-        app:layout_constraintEnd_toEndOf="@+id/button3"
-        app:layout_constraintStart_toStartOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        android:textSize="20sp"
-        android:textColor="@color/purple_200"
-        android:textStyle="bold|italic"
-        />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:entries="@array/muridDataStatic"
+        android:layout_below="@+id/listMuridSpinner"
+        android:id="@+id/listMuridSpinner2"/>
 
-    <TextView
-        android:id="@+id/textLastName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="textLastName"
-        app:layout_constraintEnd_toEndOf="@+id/textFirstName"
-        app:layout_constraintStart_toStartOf="@+id/textFirstName"
-        app:layout_constraintTop_toBottomOf="@+id/textFirstName" />
 
-    <TextView
-        android:id="@+id/textEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="text email"
-        app:layout_constraintEnd_toEndOf="@+id/textLastName"
-        app:layout_constraintStart_toStartOf="@+id/textLastName"
-        app:layout_constraintTop_toBottomOf="@+id/textLastName" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
