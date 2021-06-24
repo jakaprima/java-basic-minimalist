@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/logoTrademark"
+        android:src="@mipmap/logo_primasaja"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by Jaka at Primasaja.com"
+        android:layout_toRightOf="@+id/logoTrademark"
+        android:layout_marginLeft="15dp"
+        android:textSize="16dp"
+        android:layout_centerVertical="true"/>
+
+
+</RelativeLayout>

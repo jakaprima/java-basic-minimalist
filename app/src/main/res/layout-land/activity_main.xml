@@ -281,123 +281,24 @@
 <!--</RelativeLayout>-->
 
 
-<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    tools:context=".MainActivity">-->
-<!--    &lt;!&ndash;    cara rubahnya buka setting ganti bahasa hp maka akan mengikuti bahasanya&ndash;&gt;-->
 
-<!--    &lt;!&ndash;    <Button&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_marginTop="20dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:text="button"&ndash;&gt;-->
-<!--    &lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
-<!--    &lt;!&ndash;        app:layout_constraintHorizontal_bias="0.498"&ndash;&gt;-->
-<!--    &lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
-<!--    &lt;!&ndash;        app:layout_constraintTop_toBottomOf="@+id/language" />&ndash;&gt;-->
-
-<!--    &lt;!&ndash;    <TextView&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:id="@+id/language"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_centerInParent="true"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:text="bahasa"&ndash;&gt;-->
-<!--    &lt;!&ndash;        app:layout_constraintBottom_toTopOf="@+id/include"&ndash;&gt;-->
-<!--    &lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
-<!--    &lt;!&ndash;        app:layout_constraintHorizontal_bias="0.5"&ndash;&gt;-->
-<!--    &lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
-<!--    &lt;!&ndash;        app:layout_constraintTop_toTopOf="parent" />&ndash;&gt;-->
-
-
-<!--    &lt;!&ndash;    <com.google.android.material.floatingactionbutton.FloatingActionButton&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_marginEnd="28dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_marginRight="28dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_marginBottom="40dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
-<!--    &lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:id="@+id/fab"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:src="@drawable/ic_add"/>&ndash;&gt;-->
-
-<!--    &lt;!&ndash;    <include&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:id="@+id/include"&ndash;&gt;-->
-<!--    &lt;!&ndash;        layout="@layout/trademark"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
-<!--    &lt;!&ndash;        app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
-<!--    &lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
-<!--    &lt;!&ndash;        app:layout_constraintStart_toStartOf="parent" />&ndash;&gt;-->
-<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
-
-
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/parent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+<!--    cara rubahnya buka setting ganti bahasa hp maka akan mengikuti bahasanya-->
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bahasa"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"/>
 
-    <!--    <Button-->
-    <!--        android:id="@+id/buttonSnackBar"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="Show Snackbar"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintHorizontal_bias="0.5"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent"-->
-    <!--        tools:ignore="MissingConstraints" />-->
 
-    <!--    <com.google.android.material.card.MaterialCardView-->
-    <!--        android:id="@+id/cardView"-->
-    <!--        android:layout_width="150dp"-->
-    <!--        android:layout_height="200dp"-->
-    <!--        android:layout_marginTop="8dp"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintHorizontal_bias="0.498"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/buttonSnackBar"-->
-    <!--        app:cardCornerRadius="5dp"-->
-    <!--        app:cardElevation="5dp">-->
-    <!--        <RelativeLayout-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="match_parent">-->
-    <!--            <TextView-->
-    <!--                android:layout_width="wrap_content"-->
-    <!--                android:layout_height="wrap_content"-->
-    <!--                android:layout_centerHorizontal="true"-->
-    <!--                android:text="Hello"-->
-    <!--                android:textStyle="bold"-->
-    <!--                android:textSize="18dp"-->
-    <!--                android:id="@+id/textHello"/>-->
-    <!--                <ImageView-->
-    <!--                    android:layout_width="140dp"-->
-    <!--                    android:layout_height="match_parent"-->
-    <!--                    android:layout_below="@+id/textHello"-->
-    <!--                    android:layout_marginTop="10dp"-->
-    <!--                    android:layout_centerHorizontal="true"-->
-    <!--                    android:src="@mipmap/ic_launcher"/>-->
-
-    <!--        </RelativeLayout>-->
-    <!--    </com.google.android.material.card.MaterialCardView>-->
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:id="@+id/contactRecyclerView"/>-->
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@mipmap/ic_launcher"
-        android:id="@+id/gambarProfile"/>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-
+</RelativeLayout>
 
 
 

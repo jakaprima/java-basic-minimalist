@@ -1,8 +1,18 @@
 package com.example.android_doc_implementation;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.SystemClock;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
@@ -11,12 +21,20 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
+import com.google.android.material.card.MaterialCardView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -40,6 +58,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private ListView listKota;
     private Spinner listMuridSpinner;
     private Spinner listMuridSpinner2;
+    private FloatingActionButton fab;
+    private Button buttonSnackBar;
+    private ConstraintLayout parent;
+    private MaterialCardView cardView;
+    private RecyclerView contactRecyclerView;
+    ImageView gambarProfile;
+
 
     // click kanan generate
     @Override
@@ -153,63 +178,156 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //                }
         //            }
         //        });
-        listKota = findViewById(R.id.listKota);
-        final ArrayList<String> kotaData = new ArrayList<>();
-        kotaData.add("Tangerang");
-        kotaData.add("Tangerang Selatan");
-        kotaData.add("Jakarta Barat");
-        kotaData.add("Jakarta Timur");
 
-        ArrayAdapter<String> kotaDataAdapter = new ArrayAdapter<>(
-                this,
-                android.R.layout.simple_list_item_1,
-                kotaData
-        );
-        listKota.setAdapter(kotaDataAdapter);
-        listKota.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this, kotaData.get(i), Toast.LENGTH_SHORT).show();
-            }
-        });
 
-        listMuridSpinner = findViewById(R.id.listMuridSpinner);
-        ArrayList<String> muridData = new ArrayList<>();
-        muridData.add("Jaka");
-        muridData.add("prima");
-        muridData.add("Maulana");
 
-        ArrayAdapter<String> muridDataAdapter = new ArrayAdapter<>(
-            this,
-            android.R.layout.simple_spinner_dropdown_item,
-            muridData
-        );
-        listMuridSpinner.setAdapter(muridDataAdapter);
-        listMuridSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this, muridData.get(i), Toast.LENGTH_SHORT).show();
-            }
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
+        //        listKota = findViewById(R.id.listKota);
+        //        final ArrayList<String> kotaData = new ArrayList<>();
+        //        kotaData.add("Tangerang");
+        //        kotaData.add("Tangerang Selatan");
+        //        kotaData.add("Jakarta Barat");
+        //        kotaData.add("Jakarta Timur");
+        //
+        //        ArrayAdapter<String> kotaDataAdapter = new ArrayAdapter<>(
+        //                this,
+        //                android.R.layout.simple_list_item_1,
+        //                kotaData
+        //        );
+        //        listKota.setAdapter(kotaDataAdapter);
+        //        listKota.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        //            @Override
+        //            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        //                Toast.makeText(MainActivity.this, kotaData.get(i), Toast.LENGTH_SHORT).show();
+        //            }
+        //        });
+        //
+        //        listMuridSpinner = findViewById(R.id.listMuridSpinner);
+        //        ArrayList<String> muridData = new ArrayList<>();
+        //        muridData.add("Jaka");
+        //        muridData.add("prima");
+        //        muridData.add("Maulana");
+        //
+        //        ArrayAdapter<String> muridDataAdapter = new ArrayAdapter<>(
+        //            this,
+        //            android.R.layout.simple_spinner_dropdown_item,
+        //            muridData
+        //        );
+        //        listMuridSpinner.setAdapter(muridDataAdapter);
+        //        listMuridSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        //            @Override
+        //            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+        //                Toast.makeText(MainActivity.this, muridData.get(i), Toast.LENGTH_SHORT).show();
+        //            }
+        //            @Override
+        //            public void onNothingSelected(AdapterView<?> adapterView) {
+        //
+        //            }
+        //        });
+        //
+        //        listMuridSpinner2 = findViewById(R.id.listMuridSpinner2);
+        //        listMuridSpinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        //            @Override
+        //            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+        //                Toast.makeText(MainActivity.this, listMuridSpinner2.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
+        //            }
+        //
+        //            @Override
+        //            public void onNothingSelected(AdapterView<?> adapterView) {
+        //
+        //            }
+        //        });
 
-            }
-        });
 
-        listMuridSpinner2 = findViewById(R.id.listMuridSpinner2);
 
-        listMuridSpinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this, listMuridSpinner2.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
-            }
+        // setting bahasa ada di res/values/strings
+        //        TextView language = findViewById(R.id.language);
+        //        language.setText(R.string.language);
 
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
 
-            }
-        });
+        //        fab = findViewById(R.id.fab);
+        //        fab.setOnClickListener(new View.OnClickListener() {
+        //            @Override
+        //            public void onClick(View view) {
+        //                Toast.makeText(MainActivity.this, "Floating button clicked", Toast.LENGTH_SHORT).show();
+        //            }
+        //        });
+        //        parent = findViewById(R.id.parent);
+        //        buttonSnackBar = findViewById(R.id.buttonSnackBar);
+        //        buttonSnackBar.setOnClickListener(new View.OnClickListener() {
+        //            @Override
+        //            public void onClick(View view) {
+        //                showSnackBar();
+        //            }
+        //        });
+        //
+        //        cardView = findViewById(R.id.cardView);
+        //        cardView.setOnClickListener(new View.OnClickListener() {
+        //            @Override
+        //            public void onClick(View view) {
+        //                Toast.makeText(MainActivity.this, "card clicked", Toast.LENGTH_SHORT).show();
+        //            }
+        //        });
 
+
+        //        RecyclerView
+//        contactRecyclerView = findViewById(R.id.contactRecyclerView);
+//        ArrayList<Contact> contacts = new ArrayList<>();
+//        contacts.add(new Contact("jaka", "jaka@primasaja.com", "https://i1.sndcdn.com/avatars-000229121733-8pm0sf-t500x500.jpg"));
+//        contacts.add(new Contact("prima", "admin@primasaja.com", "https://i1.sndcdn.com/avatars-000229121733-8pm0sf-t500x500.jpg"));
+//        contacts.add(new Contact("maulana", "maulana@primasaja.com", "https://i1.sndcdn.com/avatars-000229121733-8pm0sf-t500x500.jpg"));
+
+        gambarProfile = findViewById(R.id.gambarProfile);
+        Glide.with(MainActivity.this).load("http://goo.gl/gEgYUd").into(gambarProfile);
+        //        gambarProfile = findViewById(R.id.gambarProfile);
+        //        Glide.with(MainActivity.this)
+        //                .asBitmap()
+        //                .load("https://i1.sndcdn.com/avatars-000229121733-8pm0sf-t500x500.jpg")
+        //                .into(gambarProfile);
+
+        //        ContactsRecycleViewAdapter adapter = new ContactsRecycleViewAdapter(this);
+        //        adapter.setContacts(contacts);
+        //        contactRecyclerView.setAdapter(adapter);
+        //        // vertical implementation data new LinearLayoutManager(this)
+        //        // kalo mau horizontal new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false) (bisa ditarik kaya slider)
+        //        // grid layout new GridLayoutManager(this, 2))
+        //        contactRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+        //        System.out.println("7");
+    }
+
+    private void showSnackBar(){
+        Snackbar.make(parent, "This is snackbar", Snackbar.LENGTH_SHORT)
+                .setAction("retry", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Toast.makeText(MainActivity.this, "Retry Clicked", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .setActionTextColor(getResources().getColor(R.color.blue_500))
+                .setTextColor(Color.RED)
+                .show();
+    }
+
+    // ctrl + o untuk melihat semua method yang ada
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return true;
+        //        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull @NotNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.settingsMenu:
+                Toast.makeText(this, "Settings Selected", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.alarm:
+                Toast.makeText(this, "Alarm Selected", Toast.LENGTH_SHORT).show();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     //    public void onBtnRegisterClick(View view) {
@@ -237,5 +355,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //        TextView appNama = findViewById(R.id.appNama);
     //        appNama.setText("nama aplikasi saya");
     //    }
-
 }
